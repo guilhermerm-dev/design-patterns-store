@@ -1,0 +1,7 @@
+#Ignore out directory
+out/
+
+#Ignore IntelliJ Files
+.idea
+store.iml
+.DS_Store
