@@ -19,7 +19,7 @@ public abstract class Discount {
         return nextDiscount.calculate(budget);
     }
 
-    public abstract BigDecimal applyCalculus(Budget budget);
+    protected abstract BigDecimal applyCalculus(Budget budget);
 
-    public abstract boolean shouldApplyDiscount(Budget budget);
+    protected abstract boolean shouldApplyDiscount(Budget budget);
 }
