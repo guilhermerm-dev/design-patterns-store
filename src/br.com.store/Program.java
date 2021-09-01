@@ -17,7 +17,6 @@ public class Program {
 
         // Chain of Responsibility
         DiscountCalculator discountCalculator = new DiscountCalculator();
-
         Budget budget1 = new Budget(new BigDecimal("200"), 6);
         Budget budget2 = new Budget(new BigDecimal("1000"), 1);
         System.out.println(discountCalculator.calculate(budget1));

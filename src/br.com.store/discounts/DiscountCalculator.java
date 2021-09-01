@@ -8,7 +8,7 @@ public class DiscountCalculator {
     public BigDecimal calculate(Budget budget) {
         NoDiscount noDiscount = new NoDiscount();
         DiscountForBudgetGreaterThanFiveHundred discountForBudgetGreaterThanFiveHundred = new DiscountForBudgetGreaterThanFiveHundred(noDiscount);
-        Discount discount = new DiscountForBudgetWithMoreThanFiveItems(discountForBudgetGreaterThanFiveHundred);
-        return discount.calculate(budget);
+        Discount discountChain = new DiscountForBudgetWithMoreThanFiveItems(discountForBudgetGreaterThanFiveHundred);
+        return discountChain.calculate(budget);
     }
 }
